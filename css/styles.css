@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;400&family=Sacramento&display=swap');
+
+
+:root{
+    --primary-color: #f2f6fa
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'montserrat'sans-serif;
+    color: black;
+    line-height: 1.6;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+h1,h2{
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    /* 100% will keep the image within the container */
+    width: 5; 
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    height: 70px;
+    
+}
+
+.navbar img{
+   height: 25px;
+   width: 90px;
+   justify-content: end;
+
+}
+
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a{
+    padding: 10px;
+    
+}
+
+.navbar a:hover{
+    color: blue ;
+}
+
+.navbar .flex{
+    /* if flex is in navbar it will use space-between otherwise .flex property center which is written */
+    justify-content: space-between;
+}  
+
+
+/* showcase */
+.showcase{
+    /* height: 400px; */
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 100px 170px;
+    line-height: 30px;
+   
+
+}
+
+.showcase h1{
+    font-size: 50px;
+    }
+
+.showcase p{
+    margin: 25px 0;
+    color: #767D8E;
+}
+
+.showcase-text{
+    text-align: center;
+    /* height: 520px; */
+   
+}
+
+.showcase .flex{
+    justify-content: center;
+    /* overflow: visible; */
+}
+
+/* .showcase::before,
+.showcase::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: red;
+    transform: skewY(-2deg);
+    transform: skewY(-2deg);
+} */
+
+
+/* Features */
+
+.key-features{
+    margin: 100px 170px;
+    /* padding: 90px 100px; */
+}
+
+.key-features h2{
+    font-size: 30px;
+}
+
+.key-features p{
+    margin: 25px 0;
+    color: #767D8E;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.key-features h3{
+    text-align: center;
+}
+
+.top-heading{
+    text-align: center;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin-top: 50px;
+
+}
+
+.key-icon{
+    width: 24px;
+    height: 24px;
+    color:blue;
+    
+}
+
+/* boy girl img */
+.boy-girl-image{
+    /* align-items: center; */
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    /* height: 438px;
+    width: 700px; */
+}
+
+/* pricing */
+
+.grid-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+   
+}
+
+.pricing{
+    text-align: center;
+    line-height: 40px;
+    /* background-color: var(--primary-color); */
+    /* padding-bottom: 50px;
+    margin-bottom: 50px; */
+    /* box-sizing: border-box; */
+    padding: 10px 170px;
+    
+}
+
+
+
+/* fQ */
+.faq{
+    margin-top: 150px;
+    padding: 0 170px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.qanda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   justify-content: space-around;
+   text-align: start;
+}
+
+.semiimg{
+    width: 20px;
+    margin: auto 300px;
+}
+
+.imgg{
+   display: flex;
+   justify-content: space-around;
+
+}
+
+
+
+/* trusted */
+
+.trusted{
+    margin: 100px 0px;
+}
+
+/* footer */
+
+.bottom{
+    background-color:#435966;
+ color: #98a6ad;;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 70px;
+    grid-gap: 20px;
+   
+}
+
+.com-logo{
+    background-color: #435966;
+    height: 25px;
+    width: 45px;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+.rows{
+    padding-top: 20px;
+    color:  #98a6ad;
+}
+
+
+
+
+/* utilities */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* overflow: auto; */
+    padding: 10px 40px;
+    
+
+}
+
+
+
+ .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} 
+
+
+.btn{
+   padding: 10px 10px ;
+   background: #343a40 ;
+   color:#ffffff;
+   border-radius: 5px;
+   
+   
+}
+
+
+.btn:hover{
+    background-color:black;
+    transform: scale(0.98);
+}
